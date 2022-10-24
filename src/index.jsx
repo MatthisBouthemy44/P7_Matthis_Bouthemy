@@ -5,7 +5,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 //style by Sass Partials
 import "./styles/style.css";
 
@@ -19,7 +19,9 @@ import Error from "./pages/Error";
 import StyledNavbar from "./components/Header/StyledNavbar";
 import Footer from "./components/Footer";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
     <Router>
       <StyledNavbar />
@@ -32,7 +34,6 @@ ReactDOM.render(
       <Footer />
     </Router>
   </React.StrictMode>,
-  document.getElementById("root")
 );
 
 //localhost:3000/products/{id}

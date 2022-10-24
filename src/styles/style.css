@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 body {
   margin: 0;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: auto;
@@ -11,7 +13,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 #root {
@@ -25,9 +28,10 @@ code {
   height: 111px;
   animation: fadeIn 500ms ease-in-out;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .banner {
-    height: 167px;
+    height: 223px;
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -131,6 +135,11 @@ code {
     border-radius: 10px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .collapse__button {
+    font-size: 13px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .collapse__button {
     height: 52px;
@@ -147,6 +156,13 @@ code {
 @media only screen and (min-width: 768px) {
   .collapse__arrow {
     height: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .collapse__arrow {
+    width: 20px;
+    margin-top: 3px;
+    height: 10px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -255,6 +271,28 @@ code {
 }
 .thumb:hover > .thumb__img {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .home__banner > div:nth-child(1) {
+    height: 115px;
+    margin-top: 50px;
+  }
+}
+
+.home__banner > div:nth-child(1) > h2:nth-child(3) {
+  font-size: 48px;
+  position: absolute;
+  top: 70px;
+  left: 360px;
+}
+@media only screen and (max-width: 768px) {
+  .home__banner > div:nth-child(1) > h2:nth-child(3) {
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+  }
 }
 
 @keyframes fadeInUp {
@@ -383,7 +421,8 @@ code {
     border-radius: 25px;
   }
 }
-.slider__previous, .slider__next {
+.slider__previous,
+.slider__next {
   position: absolute;
   top: 0;
   height: 100%;
@@ -399,22 +438,26 @@ code {
 .slider__previous-icon {
   margin-left: 5px;
 }
-.slider__next-icon, .slider__previous-icon {
+.slider__next-icon,
+.slider__previous-icon {
   height: 16px;
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
 }
 @media only screen and (min-width: 350px) {
-  .slider__next-icon, .slider__previous-icon {
+  .slider__next-icon,
+  .slider__previous-icon {
     height: 27px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .slider__next-icon, .slider__previous-icon {
+  .slider__next-icon,
+  .slider__previous-icon {
     height: 38px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .slider__next-icon, .slider__previous-icon {
+  .slider__next-icon,
+  .slider__previous-icon {
     height: 50px;
   }
 }
@@ -528,7 +571,8 @@ code {
 }
 @media only screen and (min-width: 350px) {
   .navbar {
-    margin: 2% 2%;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -573,13 +617,11 @@ code {
 @media only screen and (min-width: 350px) {
   .navbar__links--active {
     font-size: small;
-
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar__links--active {
-    font-size: medium;
-    
+    text-transform: uppercase;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -602,9 +644,9 @@ code {
     font-size: small;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar__links--inactive {
-    font-size: medium;
+    text-transform: uppercase;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -684,6 +726,11 @@ code {
     margin: 1%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about__dropdowns {
+    width: 100%;
   }
 }
 
@@ -797,6 +844,11 @@ code {
   margin: 0 5%;
   color: #ff6060;
   margin-bottom: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .singleproduct {
+    margin-top: 50px;
+  }
 }
 .singleproduct__content {
   margin-top: 20px;
