@@ -36,7 +36,4 @@ root.render(
   </React.StrictMode>,
 );
 
-//localhost:3000/products/{id}
-//localhost:3000/about
-//localhost:3000/err
-//localhost:3000/
+
